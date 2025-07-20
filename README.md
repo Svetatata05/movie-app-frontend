@@ -99,7 +99,7 @@ HTTP запити через Axios
 Docker/Docker Compose для запуску всіх сервісів
 
 📎 Посилання Репозиторій та образ
-🔗 GitHub репозиторій: https://github.com/Svetatata05/movie-react-app.git 
+🔗 GitHub репозиторій:https://github.com/Svetatata05/movie-app-frontend.git 
 
 🔗 DockerHub образ: dockerhub.com/koturlashsvitlana/movies
 
