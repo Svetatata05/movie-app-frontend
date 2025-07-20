@@ -1,0 +1,100 @@
+.home-container {
+  position: relative;
+  background-color: #faf9f9;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Карусель */
+.home-carousel {
+  position: relative;
+  height: 500px;
+}
+
+.carousel-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Контент зверху каруселі */
+.home-content-top {
+  position: absolute;
+  top: 20px; /* зверху, трохи відступу */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  max-width: 90%;
+  padding: 0 15px;
+  text-align: center;
+  color: white;
+}
+
+/* Тінь тексту для читабельності */
+.text-shadow {
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.7),
+    0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Кнопка "Перейти до колекції" */
+.btn-primary {
+  background-color: #74a7db;
+  border-color: #6d87a3;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0b4481;
+  border-color: #004085;
+  box-shadow: 0 0 12px rgba(0, 86, 179, 0.7);
+}
+
+/* Опис сайту між каруселлю і відео */
+.movie-description-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #222;
+  background-color: rgba(218, 227, 231, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+  .home-carousel {
+    height: 300px;
+  }
+
+  .carousel-img {
+    height: 300px;
+  }
+
+  .movie-description-container {
+    max-width: 90%;
+    font-size: 1rem;
+    margin: 30px auto;
+    padding: 15px 20px;
+  }
+
+  .icon-link img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+} 
