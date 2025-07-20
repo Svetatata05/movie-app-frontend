@@ -1,4 +1,4 @@
-# movie-app-frontend
+# movie-react-app
 
 Це односторінкова веб-програма для керування інформацією про фільми. Побудована на основі React + TypeScript + Redux Toolkit з використанням Docker для розгортання.
 
@@ -99,11 +99,17 @@ HTTP запити через Axios
 Docker/Docker Compose для запуску всіх сервісів
 
 📎 Посилання Репозиторій та образ
-🔗 GitHub репозиторій:https://github.com/Svetatata05/movie-app-frontend.git 
+🔗 GitHub репозиторій: https://github.com/Svetatata05/movie-react-app.git
 
 🔗 DockerHub образ: dockerhub.com/koturlashsvitlana/movies
 
 # Запуск в один рядок
+docker run --name movies -p 3000:3000 -p 8000:8000 -e REACT_APP_API_URL=http://localhost:8000/api/v1 koturlashsvitlana/movies
+
+Якщо такий запуск не працює,тоді
+
+docker build -t koturlashsvitlana/movies .
+
 docker run --name movies -p 3000:3000 -p 8000:8000 -e REACT_APP_API_URL=http://localhost:8000/api/v1 koturlashsvitlana/movies
 
 # Перш ніж увійти
@@ -119,4 +125,3 @@ curl --location 'http://localhost:8000/api/v1/users' \
 }'
 
 Після цього ви зможете увійти через вебінтерфейс, використовуючи введені дані.
-```
