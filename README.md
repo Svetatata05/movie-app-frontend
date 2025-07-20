@@ -1,4 +1,4 @@
-# movie-react-app
+# movie-app-frontend
 
 Це односторінкова веб-програма для керування інформацією про фільми. Побудована на основі React + TypeScript + Redux Toolkit з використанням Docker для розгортання.
 
