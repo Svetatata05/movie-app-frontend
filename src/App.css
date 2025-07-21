@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.video-footer {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  margin-top: 60px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+  display: block;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2); /* легкий затемнений фон */
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px black;
+}
+
+.social-bar {
+  display: flex;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.social-bar img {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  user-select: none;
+  pointer-events: auto;
+}
+
+.social-bar img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 1.2rem;
+  }
+
+  .social-bar img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
